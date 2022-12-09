@@ -23,14 +23,14 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Link to="/Clothing-Store-Website" className="logo-container">
+      <Link to="/clothing-store" className="logo-container">
         <img src={Logo} alt="brand" className="logo" />
       </Link>
       <div className="options">
-        <Link className="option" to="/Clothing-Store-Website/shop">
+        <Link className="option" to="/clothing-store/shop">
           SHOP
         </Link>
-        <Link className="option" to="/Clothing-Store-Website/contact">
+        <Link className="option" to="/clothing-store/contact">
           CONTACT
         </Link>
         {currentUser ? (
@@ -38,7 +38,7 @@ const Header = () => {
             SIGN OUT
           </div>
         ) : (
-          <Link to="/Clothing-Store-Website/signin" className="option">
+          <Link to="/clothing-store/signin" className="option">
             SIGN IN
           </Link>
         )}

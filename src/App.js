@@ -50,22 +50,22 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/Clothing-Store-Website" element={<Homepage />} />
+        <Route exact path="/clothing-store" element={<Homepage />} />
         <Route
           exact
-          path="/Clothing-Store-Website/contact"
+          path="/clothing-store/contact"
           element={<ContactPage />}
         />
-        <Route path="/Clothing-Store-Website/shop" element={<ShopPage />}>
+        <Route path="/clothing-store/shop" element={<ShopPage />}>
           <Route path="" element={<CollectionsOverview />} />
           <Route path=":collectionId" element={<CollectionPage />} />
         </Route>
         <Route
           exact
-          path="/Clothing-Store-Website/signin"
+          path="/clothing-store/signin"
           element={
             currentUser ? (
-              <Navigate to="/Clothing-Store-Website" replace />
+              <Navigate to="/clothing-store" replace />
             ) : (
               <SignInSignUpPage />
             )
@@ -73,7 +73,7 @@ function App() {
         />
         <Route
           exact
-          path="/Clothing-Store-Website/checkout"
+          path="/clothing-store/checkout"
           element={<CheckoutPage />}
         />
 
