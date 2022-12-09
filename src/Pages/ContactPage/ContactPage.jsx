@@ -12,7 +12,7 @@ const ContactPage = () => {
       <h1>GET IN TOUCH</h1>
       <a href="https://www.linkedin.com/in/hemant-ghatawal/" target="blank">
         <h3 className="name">Hemant Saini - Web Developer</h3>
-        <img className="profile-image" src={Profile} alt="Aarush" />
+        <img className="profile-image" src={Profile} alt="Hemant" />
       </a>
     </div>
   );
